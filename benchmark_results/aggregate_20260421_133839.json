@@ -1,0 +1,257 @@
+{
+  "timestamp": "20260421_133839",
+  "models": [
+    "llama3.2",
+    "mistral",
+    "gemma3:4b",
+    "phi4-mini",
+    "qwen2.5:3b"
+  ],
+  "metrics": {
+    "llama3.2": {
+      "bleu1": {
+        "mean": 0.0037,
+        "std": 0.0313,
+        "n": 6804
+      },
+      "bleu2": {
+        "mean": 0.0014,
+        "std": 0.0118,
+        "n": 6804
+      },
+      "rouge1": {
+        "mean": 0.015,
+        "std": 0.0805,
+        "n": 6804
+      },
+      "rouge2": {
+        "mean": 0.0021,
+        "std": 0.0277,
+        "n": 6804
+      },
+      "rougeL": {
+        "mean": 0.015,
+        "std": 0.0805,
+        "n": 6804
+      },
+      "verb_match": {
+        "mean": 0.0,
+        "std": 0.0,
+        "n": 6804
+      },
+      "noun_match": {
+        "mean": 0.0066,
+        "std": 0.0811,
+        "n": 6804
+      },
+      "hallucination_rate": {
+        "mean": 0.8021,
+        "std": 0.241,
+        "n": 6804
+      },
+      "latency_s": {
+        "mean": 0.1794,
+        "std": 0.052,
+        "n": 6804
+      },
+      "n_total": 6804,
+      "n_errors": 0
+    },
+    "mistral": {
+      "bleu1": {
+        "mean": 0.0097,
+        "std": 0.0455,
+        "n": 6804
+      },
+      "bleu2": {
+        "mean": 0.0036,
+        "std": 0.0174,
+        "n": 6804
+      },
+      "rouge1": {
+        "mean": 0.019,
+        "std": 0.0867,
+        "n": 6804
+      },
+      "rouge2": {
+        "mean": 0.0079,
+        "std": 0.0518,
+        "n": 6804
+      },
+      "rougeL": {
+        "mean": 0.0189,
+        "std": 0.0866,
+        "n": 6804
+      },
+      "verb_match": {
+        "mean": 0.0021,
+        "std": 0.0453,
+        "n": 6804
+      },
+      "noun_match": {
+        "mean": 0.02,
+        "std": 0.14,
+        "n": 6804
+      },
+      "hallucination_rate": {
+        "mean": 0.7064,
+        "std": 0.2467,
+        "n": 6804
+      },
+      "latency_s": {
+        "mean": 0.2747,
+        "std": 0.1701,
+        "n": 6804
+      },
+      "n_total": 6804,
+      "n_errors": 0
+    },
+    "gemma3:4b": {
+      "bleu1": {
+        "mean": 0.0073,
+        "std": 0.0408,
+        "n": 6804
+      },
+      "bleu2": {
+        "mean": 0.0028,
+        "std": 0.0176,
+        "n": 6804
+      },
+      "rouge1": {
+        "mean": 0.0145,
+        "std": 0.0662,
+        "n": 6804
+      },
+      "rouge2": {
+        "mean": 0.0005,
+        "std": 0.0125,
+        "n": 6804
+      },
+      "rougeL": {
+        "mean": 0.0144,
+        "std": 0.0653,
+        "n": 6804
+      },
+      "verb_match": {
+        "mean": 0.0024,
+        "std": 0.0484,
+        "n": 6804
+      },
+      "noun_match": {
+        "mean": 0.0229,
+        "std": 0.1497,
+        "n": 6804
+      },
+      "hallucination_rate": {
+        "mean": 0.7812,
+        "std": 0.2224,
+        "n": 6804
+      },
+      "latency_s": {
+        "mean": 2.5376,
+        "std": 0.0464,
+        "n": 6804
+      },
+      "n_total": 6804,
+      "n_errors": 0
+    },
+    "phi4-mini": {
+      "bleu1": {
+        "mean": 0.0082,
+        "std": 0.0456,
+        "n": 6804
+      },
+      "bleu2": {
+        "mean": 0.0031,
+        "std": 0.0182,
+        "n": 6804
+      },
+      "rouge1": {
+        "mean": 0.0133,
+        "std": 0.071,
+        "n": 6804
+      },
+      "rouge2": {
+        "mean": 0.0034,
+        "std": 0.0357,
+        "n": 6804
+      },
+      "rougeL": {
+        "mean": 0.0133,
+        "std": 0.071,
+        "n": 6804
+      },
+      "verb_match": {
+        "mean": 0.0029,
+        "std": 0.0541,
+        "n": 6804
+      },
+      "noun_match": {
+        "mean": 0.0179,
+        "std": 0.1327,
+        "n": 6804
+      },
+      "hallucination_rate": {
+        "mean": 0.6419,
+        "std": 0.2403,
+        "n": 6804
+      },
+      "latency_s": {
+        "mean": 1.9867,
+        "std": 0.1265,
+        "n": 6804
+      },
+      "n_total": 6804,
+      "n_errors": 0
+    },
+    "qwen2.5:3b": {
+      "bleu1": {
+        "mean": 0.0034,
+        "std": 0.0285,
+        "n": 6804
+      },
+      "bleu2": {
+        "mean": 0.0012,
+        "std": 0.0104,
+        "n": 6804
+      },
+      "rouge1": {
+        "mean": 0.0053,
+        "std": 0.0394,
+        "n": 6804
+      },
+      "rouge2": {
+        "mean": 0.0001,
+        "std": 0.0054,
+        "n": 6804
+      },
+      "rougeL": {
+        "mean": 0.0053,
+        "std": 0.0394,
+        "n": 6804
+      },
+      "verb_match": {
+        "mean": 0.0,
+        "std": 0.0,
+        "n": 6804
+      },
+      "noun_match": {
+        "mean": 0.0107,
+        "std": 0.103,
+        "n": 6804
+      },
+      "hallucination_rate": {
+        "mean": 0.6902,
+        "std": 0.2552,
+        "n": 6804
+      },
+      "latency_s": {
+        "mean": 1.9212,
+        "std": 0.0297,
+        "n": 6804
+      },
+      "n_total": 6804,
+      "n_errors": 0
+    }
+  }
+}

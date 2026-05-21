@@ -1,0 +1,15 @@
+{
+  "timestamp": "20260421_133839",
+  "raw_json": "D:\\jayant_gathik\\benchmark_results\\raw_20260421_133839.json",
+  "raw_csv": "D:\\jayant_gathik\\benchmark_results\\raw_20260421_133839.csv",
+  "aggregate": "D:\\jayant_gathik\\benchmark_results\\aggregate_20260421_133839.json",
+  "models": [
+    "llama3.2",
+    "mistral",
+    "gemma3:4b",
+    "phi4-mini",
+    "qwen2.5:3b"
+  ],
+  "n_samples": 6804,
+  "elapsed_s": 47744.0
+}

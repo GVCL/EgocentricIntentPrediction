@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EPIC-KITCHENS Benchmark Report</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: #f5f7fa; color: #1a1a2e; line-height: 1.6; }
+header { background: linear-gradient(135deg,#0f3460,#16213e);
+         color: white; padding: 24px 40px; }
+header h1 { font-size: 1.6rem; }
+header p  { opacity: .75; font-size: .9rem; }
+main { max-width: 1200px; margin: 32px auto; padding: 0 24px; }
+h2 { color: #0f3460; border-left: 4px solid #e94560;
+     padding-left: 12px; margin: 32px 0 16px; font-size: 1.2rem; }
+.card { background: white; border-radius: 10px; padding: 20px;
+        box-shadow: 0 2px 12px rgba(0,0,0,.08); margin-bottom: 24px; }
+table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+th { background: #0f3460; color: white; padding: 10px 12px;
+     text-align: right; white-space: nowrap; }
+th:first-child { text-align: left; }
+td { padding: 8px 12px; border-bottom: 1px solid #e8eaf0;
+     text-align: right; }
+td:first-child { text-align: left; font-weight: 600; }
+tr:hover td { background: #f0f4ff; }
+.best  { color: #2d6a4f; font-weight: 700; }
+.worst { color: #c44e52; }
+.chart-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(420px,1fr));
+              gap: 20px; }
+.chart-card img { width:100%; border-radius:6px; }
+.pill { display:inline-block; padding:2px 10px; border-radius:20px;
+        font-size:.78rem; font-weight:600; }
+.pill-good { background:#d8f3dc; color:#2d6a4f; }
+.pill-bad  { background:#ffe0e0; color:#c44e52; }
+.sample-table td { font-size: .8rem; }
+footer { text-align:center; padding:24px; color:#888; font-size:.8rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🧠 EPIC-KITCHENS Intent Prediction Benchmark</h1>
+  <p>Run: 20260421_133839 &nbsp;|&nbsp; Participant: P01 &nbsp;|&nbsp;
+     Models: llama3.2, mistral, gemma3:4b, phi4-mini, qwen2.5:3b &nbsp;|&nbsp;
+     Total samples: 6804</p>
+</header>
+<main>
+
+<h2>📊 Leaderboard</h2>
+<div class="card">
+<table>
+<thead><tr>
+  <th>Model</th>
+  <th>BLEU-1</th><th>BLEU-2</th><th>ROUGE-1</th><th>ROUGE-2</th><th>ROUGE-L</th>
+  <th>Verb %</th><th>Noun %</th><th>Hall ↓</th><th>Lat (s)</th><th>N</th>
+</tr></thead>
+<tbody><tr><td>mistral</td><td class="best">0.0097</td><td class="best">0.0036</td><td class="best">0.0190</td><td class="best">0.0079</td><td class="best">0.0189</td><td>0.2%</td><td>2.0%</td><td>0.7064</td><td>0.275</td><td>6804</td></tr>
+<tr><td>llama3.2</td><td>0.0037</td><td>0.0014</td><td>0.0150</td><td>0.0021</td><td>0.0150</td><td class="worst">0.0%</td><td class="worst">0.7%</td><td class="worst">0.8021</td><td class="best">0.179</td><td>6804</td></tr>
+<tr><td>gemma3:4b</td><td>0.0073</td><td>0.0028</td><td>0.0145</td><td>0.0005</td><td>0.0144</td><td>0.2%</td><td class="best">2.3%</td><td>0.7812</td><td class="worst">2.538</td><td>6804</td></tr>
+<tr><td>phi4-mini</td><td>0.0082</td><td>0.0031</td><td>0.0133</td><td>0.0034</td><td>0.0133</td><td class="best">0.3%</td><td>1.8%</td><td class="best">0.6419</td><td>1.987</td><td>6804</td></tr>
+<tr><td>qwen2.5:3b</td><td class="worst">0.0034</td><td class="worst">0.0012</td><td class="worst">0.0053</td><td class="worst">0.0001</td><td class="worst">0.0053</td><td>0.0%</td><td>1.1%</td><td>0.6902</td><td>1.921</td><td>6804</td></tr></tbody>
+</table>
+<p style="margin-top:12px;font-size:.8rem;color:#666">
+  <span class="pill pill-good">best ↑</span> highest score per column &nbsp;
+  <span class="pill pill-bad">worst ↓</span> lowest score per column
+</p>
+</div>
+
+<h2>📈 Charts</h2>
+<div class="chart-grid">
+<div class='card chart-card'><h2>Model Overview</h2><img src='chart_overview_20260421_133839.png' alt='Model Overview'></div><div class='card chart-card'><h2>Radar Comparison</h2><img src='chart_radar_20260421_133839.png' alt='Radar Comparison'></div><div class='card chart-card'><h2>Per-Video ROUGE-L</h2><img src='chart_per_video_20260421_133839.png' alt='Per-Video ROUGE-L'></div><div class='card chart-card'><h2>Latency Distribution</h2><img src='chart_latency_20260421_133839.png' alt='Latency Distribution'></div>
+</div>
+
+<h2>🔍 Sample Predictions (llama3.2)</h2>
+<div class="card">
+<table class="sample-table">
+<thead><tr>
+  <th style="text-align:left">Video</th>
+  <th style="text-align:left">Ground Truth</th>
+  <th style="text-align:left">Prediction</th>
+  <th>ROUGE-L</th>
+</tr></thead>
+<tbody><tr><td>P01_01</td><td>open door</td><td>Turning.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+<tr><td>P01_01</td><td>turn on light</td><td>Turning.</td><td><span class='pill pill-good'>0.500</span></td></tr>
+<tr><td>P01_01</td><td>close door</td><td>Turning.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+<tr><td>P01_01</td><td>open fridge</td><td>Opening the refrigerator.</td><td><span class='pill pill-good'>0.400</span></td></tr>
+<tr><td>P01_01</td><td>take celery</td><td>Looking at the person.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+<tr><td>P01_01</td><td>take container</td><td>Looking at the person.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+<tr><td>P01_01</td><td>take tofu</td><td>Turning to the person.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+<tr><td>P01_01</td><td>close fridge</td><td>Turning.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+<tr><td>P01_01</td><td>open fridge</td><td>Drinking from the bottle.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+<tr><td>P01_01</td><td>take carrots and</td><td>Opening the refrigerator door.</td><td><span class='pill pill-bad'>0.000</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>📐 Metric Glossary</h2>
+<div class="card">
+<table>
+<tr><td><b>BLEU-1 / BLEU-2</b></td><td>Unigram / bigram precision overlap between prediction and ground-truth narration.</td></tr>
+<tr><td><b>ROUGE-1</b></td><td>Unigram F1 recall of ground-truth tokens in the prediction.</td></tr>
+<tr><td><b>ROUGE-L</b></td><td>Longest-Common-Subsequence F1 — rewards in-order word matching.</td></tr>
+<tr><td><b>Verb Match %</b></td><td>Fraction of samples where the GT action verb appeared in the prediction.</td></tr>
+<tr><td><b>Noun Match %</b></td><td>Fraction of samples where at least one GT object noun appeared in the prediction.</td></tr>
+<tr><td><b>Hallucination ↓</b></td><td>Fraction of content words in the prediction NOT present in YOLO detections (lower = better grounded).</td></tr>
+<tr><td><b>Latency</b></td><td>Wall-clock time for the LLM to return a response (Ollama local inference).</td></tr>
+</table>
+</div>
+
+</main>
+<footer>Generated by evaluate.py on 2026-04-23 08:44:35 — EPIC-KITCHENS Benchmark</footer>
+</body>
+</html>
