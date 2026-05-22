@@ -1,0 +1,68 @@
+{
+  "annotations": "C:\\Users\\gathi\\projects\\EgocentricIntentPrediction\\dataset\\annotations.json",
+  "prediction_source": "C:\\Users\\gathi\\projects\\EgocentricIntentPrediction\\models\\yolo11n.pt",
+  "confidence_threshold": 0.25,
+  "iou_threshold": 0.5,
+  "overall": {
+    "name": "overall",
+    "evaluated_samples": 79,
+    "label_metrics": {
+      "precision": 0.6293333333333333,
+      "recall": 0.502127659574468,
+      "f1_score": 0.5585798816568046,
+      "accuracy": 0.6539888682745826,
+      "exact_match_accuracy": 0.0
+    },
+    "label_counts": {
+      "tp": 236,
+      "fp": 139,
+      "fn": 234,
+      "tn": 469
+    }
+  },
+  "per_video": [
+    {
+      "name": "dataset/com.oculus.vrshell-20260430-221242-0.mp4",
+      "evaluated_samples": 32,
+      "label_metrics": {
+        "precision": 0.6241610738255033,
+        "recall": 0.484375,
+        "f1_score": 0.5454545454545453,
+        "accuracy": 0.6228710462287105,
+        "exact_match_accuracy": 0.0
+      },
+      "label_counts": {
+        "tp": 93,
+        "fp": 56,
+        "fn": 99,
+        "tn": 163
+      }
+    },
+    {
+      "name": "dataset/com.oculus.vrshell-20260430-221558-0.mp4",
+      "evaluated_samples": 47,
+      "label_metrics": {
+        "precision": 0.6327433628318584,
+        "recall": 0.5143884892086331,
+        "f1_score": 0.5674603174603174,
+        "accuracy": 0.6731634182908546,
+        "exact_match_accuracy": 0.0
+      },
+      "label_counts": {
+        "tp": 143,
+        "fp": 83,
+        "fn": 135,
+        "tn": 306
+      }
+    }
+  ],
+  "charts": {
+    "directory": "C:\\Users\\gathi\\projects\\EgocentricIntentPrediction\\benchmark_results\\object_detection_graphs\\object_detection_metrics",
+    "files": [
+      "C:\\Users\\gathi\\projects\\EgocentricIntentPrediction\\benchmark_results\\object_detection_graphs\\object_detection_metrics\\overall_label_metrics.png",
+      "C:\\Users\\gathi\\projects\\EgocentricIntentPrediction\\benchmark_results\\object_detection_graphs\\object_detection_metrics\\overall_label_counts.png",
+      "C:\\Users\\gathi\\projects\\EgocentricIntentPrediction\\benchmark_results\\object_detection_graphs\\object_detection_metrics\\per_video_label_metrics.png",
+      "C:\\Users\\gathi\\projects\\EgocentricIntentPrediction\\benchmark_results\\object_detection_graphs\\object_detection_metrics\\per_video_samples.png"
+    ]
+  }
+}

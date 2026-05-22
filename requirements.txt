@@ -18,3 +18,4 @@ tqdm
 rouge-score
 nltk
 matplotlib
+opencv-python

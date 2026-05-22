@@ -1,0 +1,2866 @@
+{
+  "schema_version": "object_detection_annotations_v1",
+  "description": "Fill objects for each sampled frame. Use labels from your detector when possible. bbox is optional and uses [x1, y1, x2, y2] pixel coordinates.",
+  "label_universe": [
+    "monitor",
+    "notebook",
+    "pen",
+    "keyboard",
+    "mouse",
+    "person",
+    "chair",
+    "table",
+    "phone",
+    "cup"
+  ],
+  "videos": [
+    {
+      "video_path": "dataset/com.oculus.vrshell-20260430-221242-0.mp4",
+      "metadata": {
+        "fps": null,
+        "frame_count": null,
+        "duration_s": 62.0,
+        "width": null,
+        "height": null
+      },
+      "samples": [
+        {
+          "frame_index": 0,
+          "time_s": 0.0,
+          "objects": [
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 60,
+          "time_s": 2.0,
+          "objects": [
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "mouse",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "phone",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "notebook",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 120,
+          "time_s": 4.0,
+          "objects": [
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "mouse",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "phone",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "notebook",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 180,
+          "time_s": 6.0,
+          "objects": [
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "mouse",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "phone",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "notebook",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 240,
+          "time_s": 8.0,
+          "objects": [
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "mouse",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "phone",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "notebook",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 300,
+          "time_s": 10.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 360,
+          "time_s": 12.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 420,
+          "time_s": 14.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 480,
+          "time_s": 16.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 540,
+          "time_s": 18.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 600,
+          "time_s": 20.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 660,
+          "time_s": 22.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 720,
+          "time_s": 24.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 780,
+          "time_s": 26.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 840,
+          "time_s": 28.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 900,
+          "time_s": 30.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 960,
+          "time_s": 32.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1020,
+          "time_s": 34.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1080,
+          "time_s": 36.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1140,
+          "time_s": 38.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1200,
+          "time_s": 40.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1260,
+          "time_s": 42.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1320,
+          "time_s": 44.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1380,
+          "time_s": 46.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1440,
+          "time_s": 48.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1500,
+          "time_s": 50.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1560,
+          "time_s": 52.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1620,
+          "time_s": 54.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1680,
+          "time_s": 56.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1740,
+          "time_s": 58.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1800,
+          "time_s": 60.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1860,
+          "time_s": 62.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "video_path": "dataset/com.oculus.vrshell-20260430-221558-0.mp4",
+      "metadata": {
+        "fps": null,
+        "frame_count": null,
+        "duration_s": 92.0,
+        "width": null,
+        "height": null
+      },
+      "samples": [
+        {
+          "frame_index": 0,
+          "time_s": 0.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 60,
+          "time_s": 2.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 120,
+          "time_s": 4.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pen",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "mouse",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "phone",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "pens",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 180,
+          "time_s": 6.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 240,
+          "time_s": 8.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 300,
+          "time_s": 10.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 360,
+          "time_s": 12.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 420,
+          "time_s": 14.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 480,
+          "time_s": 16.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 540,
+          "time_s": 18.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "book",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 600,
+          "time_s": 20.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 660,
+          "time_s": 22.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 720,
+          "time_s": 24.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 780,
+          "time_s": 26.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 840,
+          "time_s": 28.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 900,
+          "time_s": 30.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 960,
+          "time_s": 32.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1020,
+          "time_s": 34.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1080,
+          "time_s": 36.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1140,
+          "time_s": 38.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1200,
+          "time_s": 40.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1260,
+          "time_s": 42.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1320,
+          "time_s": 44.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1380,
+          "time_s": 46.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1440,
+          "time_s": 48.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1500,
+          "time_s": 50.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1560,
+          "time_s": 52.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1620,
+          "time_s": 54.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1680,
+          "time_s": 56.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1740,
+          "time_s": 58.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1800,
+          "time_s": 60.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1860,
+          "time_s": 62.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1920,
+          "time_s": 64.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 1980,
+          "time_s": 66.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2040,
+          "time_s": 68.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2100,
+          "time_s": 70.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2160,
+          "time_s": 72.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2220,
+          "time_s": 74.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2280,
+          "time_s": 76.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2340,
+          "time_s": 78.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2400,
+          "time_s": 80.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2460,
+          "time_s": 82.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2520,
+          "time_s": 84.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2580,
+          "time_s": 86.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2640,
+          "time_s": 88.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2700,
+          "time_s": 90.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "frame_index": 2760,
+          "time_s": 92.0,
+          "objects": [
+            {
+              "label": "monitor",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "tv",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "keyboard",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "paper",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "scissors",
+              "bbox": [],
+              "notes": ""
+            },
+            {
+              "label": "person",
+              "bbox": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
