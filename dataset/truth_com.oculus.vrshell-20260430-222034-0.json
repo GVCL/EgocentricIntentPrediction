@@ -1,6 +1,6 @@
 [
   {
-    "video_id": "com.oculus.vrshell-20260430-222034-0_1",
+    "video_id": "com.oculus.vrshell-20260430-222034-0",
     "ground_truth": "watching monitor",
     "duration_s": 5,
     "gt_verb": "watch",
@@ -8,7 +8,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-222034-0_2",
+    "video_id": "com.oculus.vrshell-20260430-222034-0",
     "ground_truth": "working on monitor",
     "duration_s": 4,
     "gt_verb": "work",
@@ -16,7 +16,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-222034-0_3",
+    "video_id": "com.oculus.vrshell-20260430-222034-0",
     "ground_truth": "typing on the keyboard",
     "duration_s": 7,
     "gt_verb": "type",
@@ -24,7 +24,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-222034-0_4",
+    "video_id": "com.oculus.vrshell-20260430-222034-0",
     "ground_truth": "working on monitor",
     "duration_s": 9,
     "gt_verb": "work",
@@ -32,7 +32,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-222034-0_5",
+    "video_id": "com.oculus.vrshell-20260430-222034-0",
     "ground_truth": "watching a video on monitor",
     "duration_s": 22,
     "gt_verb": "watch",
@@ -40,7 +40,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-222034-0_6",
+    "video_id": "com.oculus.vrshell-20260430-222034-0",
     "ground_truth": "working on monitor",
     "duration_s": 8,
     "gt_verb": "work",

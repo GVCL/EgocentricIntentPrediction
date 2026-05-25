@@ -1,6 +1,6 @@
 """
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║             MR Activity Benchmark — Oculus Capture Edition                   ║
+║            MR Activity Benchmark — Oculus Capture Edition                    ║
 ║                                                                              ║
 ║  Benchmarks local MP4 recordings against manually-created ground-truth       ║
 ║  action JSON annotations. Samples temporal clip midpoints, runs YOLO         ║
@@ -8,13 +8,13 @@
 ║  raw + aggregate metrics.                                                    ║
 ║                                                                              ║
 ║  Designed for:                                                               ║
-║    C:\\Users\\JayantGathik\\AppData\\Roaming\\odh\\captures                  ║
+║    dataset/                                                                  ║
 ║                                                                              ║
 ║  Usage:                                                                      ║
-║    python benchmark_oculus.py                                                ║
-║    python benchmark_oculus.py --models llama3.2 mistral                      ║
-║    python benchmark_oculus.py --preview                                      ║
-║    python benchmark_oculus.py --max-clips 5                                  ║
+║    python src/benchmark_oculus.py                                            ║
+║    python src/benchmark_oculus.py --models llama3.2 mistral                  ║
+║    python src/benchmark_oculus.py --preview                                  ║
+║    python src/benchmark_oculus.py --max-clips 5                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 """
 
@@ -55,9 +55,7 @@ except ImportError:
 
 
 # Config
-CAPTURE_DIR = Path(
-    r"C:\Users\JayantGathik\AppData\Roaming\odh\captures"
-)
+CAPTURE_DIR = Path(__file__).resolve().parent.parent / "dataset"
 
 RESULTS_DIR = Path("./benchmark_results")
 
@@ -72,7 +70,9 @@ OLLAMA_TIMEOUT = 120
 DEFAULT_MODELS = [
     "llama3.2",
     "mistral",
-    "gemma3:4b",
+    "gemma3",
+    "phi4-mini",
+    "qwen2.5"
 ]
 
 VIDEO_IDS = [
@@ -261,6 +261,23 @@ def verb_match(prediction, gt_verb):
 
     return gt_verb.lower() in tokenize(prediction)
 
+def hallucination_rate(prediction, objects_detected):
+
+    STOP = {"the", "a", "an", "to", "and", "or", "is", "are", "on", "in",
+            "into", "from", "with", "for", "of", "it", "at", "by", "be",
+            "about", "up", "before", "after", "then", "that", "this",
+            "place", "put", "get", "take", "use", "using", "cut", "add",
+            "wash", "pour", "pick", "grab", "open", "close", "move",
+            "prepare", "start", "begin", "ready", "set", "begin"}
+            
+    obj_tokens = set(tokenize(" ".join(objects_detected)))
+    pred_content = [t for t in tokenize(prediction) if t not in STOP and len(t) > 2]
+    
+    if not pred_content:
+        return 0.0
+        
+    hallucinated = sum(1 for t in pred_content if t not in obj_tokens)
+    return round(hallucinated / len(pred_content), 4)
 
 def noun_match(prediction, gt_noun):
 
@@ -358,18 +375,23 @@ def process_video(
             gaze=gaze,
         )
 
+        start_frame = int(current_time_s * fps)
+        stop_frame = int((current_time_s + duration_s) * fps)
+
         row = {
             "video_id": ann["video_id"],
+            "frame": midpoint_frame,
+            "timestamp_s": round(midpoint_s, 3),
+            "start_frame": start_frame,
+            "stop_frame": stop_frame,
             "ground_truth": ann["ground_truth"],
             "gt_verb": ann["gt_verb"],
             "gt_noun": ann["gt_noun"],
-            "duration_s": duration_s,
-            "midpoint_frame": midpoint_frame,
-            "timestamp_s": round(midpoint_s, 3),
+            "gt_all_nouns": ann.get("gt_noun", ""),
+            "gt_emotion": ann.get("emotion", "Unknown"),
             "objects_detected": object_labels,
             "gaze": gaze,
         }
-
         for model in models:
 
             pred, latency = query_ollama(model, prompt)
@@ -397,6 +419,8 @@ def process_video(
                 safe_pred,
                 ann["gt_noun"],
             )
+            
+            hall = hallucination_rate(safe_pred, object_labels) if not is_error else 1.0
 
             prefix = (
                 model.replace(":", "_")
@@ -414,6 +438,7 @@ def process_video(
                 f"{prefix}__rougeL": rouge["rougeL"],
                 f"{prefix}__verb_match": int(vm),
                 f"{prefix}__noun_match": int(nm),
+                f"{prefix}__hallucination_rate": hall,
                 f"{prefix}__error": int(is_error),
             })
 
@@ -437,53 +462,36 @@ def process_video(
 def aggregate(results, models):
 
     metrics = [
-        "bleu1",
-        "bleu2",
-        "rouge1",
-        "rouge2",
-        "rougeL",
-        "verb_match",
-        "noun_match",
-        "latency_s",
+        "bleu1", "bleu2", "rouge1", "rouge2", "rougeL",
+        "verb_match", "noun_match", "hallucination_rate", "latency_s"
     ]
 
     agg = {}
 
     for model in models:
-
-        prefix = (
-            model.replace(":", "_")
-            .replace("/", "_")
-            .replace(".", "_")
-        )
-
+        prefix = model.replace(":", "_").replace("/", "_").replace(".", "_")
         model_scores = defaultdict(list)
 
         for row in results:
-
             if row.get(f"{prefix}__error", 1):
                 continue
-
             for metric in metrics:
-
                 key = f"{prefix}__{metric}"
-
                 if key in row:
-                    model_scores[metric].append(
-                        float(row[key])
-                    )
+                    model_scores[metric].append(float(row[key]))
 
         agg[model] = {}
 
         for metric in metrics:
-
             vals = model_scores[metric]
-
             agg[model][metric] = {
                 "mean": round(float(np.mean(vals)), 4) if vals else 0.0,
                 "std": round(float(np.std(vals)), 4) if vals else 0.0,
                 "n": len(vals),
             }
+            
+        agg[model]["n_total"] = len([r for r in results if f"{prefix}__prediction" in r])
+        agg[model]["n_errors"] = len([r for r in results if r.get(f"{prefix}__error", 0)])
 
     return agg
 
@@ -629,7 +637,7 @@ def main():
     raw_json = RESULTS_DIR / f"raw_{ts}.json"
 
     with open(raw_json, "w", encoding="utf-8") as f:
-        json.dump(all_results, f, indent=2)
+        json.dump(all_results, f, indent=2, default=str)
 
     raw_csv = RESULTS_DIR / f"raw_{ts}.csv"
 
@@ -646,13 +654,31 @@ def main():
         writer.writerows(all_results)
 
     agg_json = RESULTS_DIR / f"aggregate_{ts}.json"
-
     with open(agg_json, "w", encoding="utf-8") as f:
-        json.dump(agg, f, indent=2)
+        # Wrap the metrics so the graphing script can read it
+        json.dump({
+            "timestamp": ts, 
+            "models": models_to_run, 
+            "metrics": agg
+        }, f, indent=2)
+
+    # Generate the manifest file
+    manifest = RESULTS_DIR / "latest.json"
+    with open(manifest, "w", encoding="utf-8") as f:
+        json.dump({
+            "timestamp": ts,
+            "raw_json": str(raw_json),
+            "raw_csv": str(raw_csv),
+            "aggregate": str(agg_json),
+            "models": models_to_run,
+            "n_samples": len(all_results),
+            "elapsed_s": round(elapsed, 1),
+        }, f, indent=2)
 
     print(f"\n💾 Raw JSON  -> {raw_json}")
     print(f"💾 Raw CSV   -> {raw_csv}")
     print(f"💾 Aggregate -> {agg_json}")
+    print(f"💾 Manifest  -> {manifest}")
 
     if args.preview:
         cv2.destroyAllWindows()

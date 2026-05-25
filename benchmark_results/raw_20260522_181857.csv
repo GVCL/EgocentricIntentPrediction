@@ -1,0 +1,37 @@
+video_id,frame,timestamp_s,start_frame,stop_frame,ground_truth,gt_verb,gt_noun,gt_all_nouns,gt_emotion,objects_detected,gaze,qwen2_5__prediction,qwen2_5__latency_s,qwen2_5__bleu1,qwen2_5__bleu2,qwen2_5__rouge1,qwen2_5__rouge2,qwen2_5__rougeL,qwen2_5__verb_match,qwen2_5__noun_match,qwen2_5__hallucination_rate,qwen2_5__error
+com.oculus.vrshell-20260430-221242-0,67,2.25,0,134,watching monitor,watch,monitor,monitor,Neutral,['laptop'],nothing,Looking at laptop,17.902,0,0,0.0,0.0,0.0,0,0,0.5,0
+com.oculus.vrshell-20260430-221242-0,224,7.5,134,314,grabbing a notebook,grab,notebook,notebook,Neutral,"['keyboard', 'mouse', 'tv', 'tv']",tv,Watching TV,2.042,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221242-0,419,14.0,314,524,opening the notebook,open,notebook,notebook,Neutral,"['tv', 'person', 'tv']",tv,Watching TV,2.014,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221242-0,584,19.5,524,644,opening the pen,open,pen,pen,Neutral,"['tv', 'person', 'keyboard', 'tv', 'cell phone']",tv,Watching TV,2.372,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221242-0,772,25.75,644,899,writing with pen in notebook,write,notebook,notebook,Neutral,"['mouse', 'keyboard', 'tv', 'tv', 'person']",keyboard,typing,2.732,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221242-0,989,33.0,899,1079,drawing with pen in notebook,draw,notebook,notebook,Neutral,"['mouse', 'keyboard', 'tv', 'tv', 'person']",nothing,Looking at tv,1.504,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221242-0,1439,48.0,1079,1799,writing with pen in notebook,write,notebook,notebook,Neutral,"['mouse', 'keyboard', 'tv', 'tv', 'person', 'book', 'person']",keyboard,typing,2.047,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221242-0,1829,61.0,1799,1859,watching monitor,watch,monitor,monitor,Neutral,"['keyboard', 'tv']",tv,Watching TV,2.442,0.5,0.2236,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221558-0,59,2.0,0,119,watching monitor,watch,monitor,monitor,Neutral,"['keyboard', 'laptop']",laptop,Reading the laptop screen,2.33,0,0,0.0,0.0,0.0,0,0,0.6667,0
+com.oculus.vrshell-20260430-221558-0,179,6.0,119,239,grab a ruler,grab,ruler,ruler,Neutral,"['mouse', 'keyboard', 'tv', 'tv']",tv,Watching TV,2.626,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221558-0,344,11.5,239,449,tear a page from notebook,tear,page,page,Neutral,"['tv', 'keyboard', 'person']",person,looking at person,2.294,0,0,0.0,0.0,0.0,0,0,0.5,0
+com.oculus.vrshell-20260430-221558-0,554,18.5,449,659,folding the paper,fold,paper,paper,Neutral,"['mouse', 'keyboard', 'tv', 'tv', 'person']",keyboard,typing,2.464,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221558-0,1184,39.5,659,1709,cutting the paper,cut,paper,paper,Neutral,"['keyboard', 'tv', 'cell phone']",keyboard,typing on keyboard,2.467,0,0,0.0,0.0,0.0,0,0,0.5,0
+com.oculus.vrshell-20260430-221558-0,1769,59.0,1709,1829,open the paper,open,paper,paper,Neutral,"['tv', 'keyboard']",keyboard,typing on the keyboard,2.268,0.25,0.0913,0.0,0.0,0.0,0,0,0.5,0
+com.oculus.vrshell-20260430-221558-0,1874,62.5,1829,1919,folding the paper,fold,paper,paper,Neutral,"['keyboard', 'tv', 'person']",keyboard,typing on the keyboard,2.575,0.25,0.0913,0.0,0.0,0.0,0,0,0.5,0
+com.oculus.vrshell-20260430-221558-0,2069,69.0,1919,2219,cutting the paper,cut,paper,paper,Neutral,"['tv', 'keyboard', 'person', 'cell phone']",nothing,looking around room,2.679,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221558-0,2294,76.5,2219,2369,folding the paper,fold,paper,paper,Neutral,"['tv', 'keyboard', 'cell phone', 'person']",nothing,Looking around room,2.236,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221558-0,2459,82.0,2369,2549,cutting the paper,cut,paper,paper,Neutral,"['tv', 'keyboard', 'cell phone', 'person', 'mouse']",nothing,looking around room,2.044,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221558-0,2654,88.5,2549,2759,looking at monitor,look,monitor,monitor,Neutral,"['tv', 'person', 'keyboard', 'cell phone', 'person']",nothing,Looking around room,2.588,0.3333,0.1291,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,59,2.0,0,119,watching monitor,watch,monitor,monitor,Neutral,"['keyboard', 'tv', 'tv']",tv,Watching TV,2.146,0.5,0.2236,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,164,5.5,119,209,grabbing a case,grab,case,case,Neutral,"['keyboard', 'tv', 'tv', 'cell phone', 'mouse']",tv,Watching TV,2.159,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,254,8.5,209,299,opening the case,open,case,case,Neutral,"['person', 'keyboard', 'tv', 'tv', 'mouse', 'cell phone']",tv,Watching TV,2.991,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,329,11.0,299,359,picking up spectacles,pick,spectacles,spectacles,Neutral,"['keyboard', 'tv', 'tv', 'mouse', 'person', 'cell phone']",tv,Watching TV,2.817,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,659,22.0,359,959,cleaning spectacles,clean,spectacles,spectacles,Neutral,"['keyboard', 'person', 'tv', 'tv', 'cell phone', 'mouse']",tv,Watching TV,3.109,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,1034,34.5,959,1109,putting down cloth,put,cloth,cloth,Neutral,"['mouse', 'person', 'keyboard', 'tv', 'person', 'cell phone', 'tv']",keyboard,typing on the keyboard,3.807,0,0,0.0,0.0,0.0,0,0,0.5,0
+com.oculus.vrshell-20260430-221840-0,1214,40.5,1109,1319,putting cloth in case,put,cloth,cloth,Neutral,"['tv', 'keyboard', 'mouse', 'person', 'tv']",keyboard,typing,2.787,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,1379,46.0,1319,1439,closing the case,close,case,case,Neutral,"['tv', 'keyboard', 'person', 'cell phone', 'tv']",nothing,Looking around room,2.53,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,1499,50.0,1439,1559,picking up phone,pick,phone,phone,Neutral,"['keyboard', 'tv', 'person', 'tv', 'cup', 'cell phone']",tv,Watching TV,2.969,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-221840-0,1709,57.0,1559,1859,watching phone,watch,phone,phone,Neutral,"['keyboard', 'tv', 'person', 'cell phone']",keyboard,typing on keyboard,2.039,0,0,0.0,0.0,0.0,0,0,0.5,0
+com.oculus.vrshell-20260430-221840-0,1889,63.0,1859,1919,watching monitor,watch,monitor,monitor,Neutral,"['keyboard', 'tv']",tv,Watching TV,1.771,0.5,0.2236,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-222034-0,74,2.5,0,149,watching monitor,watch,monitor,monitor,Neutral,"['keyboard', 'tv', 'tv', 'person']",tv,Watching TV,2.251,0.5,0.2236,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-222034-0,209,7.0,149,269,working on monitor,work,monitor,monitor,Neutral,"['keyboard', 'tv', 'tv']",tv,Watching TV,1.691,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-222034-0,374,12.5,269,479,typing on the keyboard,type,keyboard,keyboard,Neutral,"['tv', 'person', 'keyboard']",tv,Watching TV,2.281,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-222034-0,614,20.5,479,749,working on monitor,work,monitor,monitor,Neutral,"['tv', 'keyboard']",tv,Watching TV,1.618,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-222034-0,1079,36.0,749,1409,watching a video on monitor,watch,video,video,Neutral,"['keyboard', 'tv', 'person', 'person']",nothing,looking around,2.352,0,0,0.0,0.0,0.0,0,0,1.0,0
+com.oculus.vrshell-20260430-222034-0,1529,51.0,1409,1649,working on monitor,work,monitor,monitor,Neutral,"['tv', 'tv', 'keyboard']",tv,Watching TV,2.263,0,0,0.0,0.0,0.0,0,0,1.0,0

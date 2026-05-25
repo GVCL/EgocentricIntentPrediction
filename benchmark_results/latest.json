@@ -1,15 +1,11 @@
 {
-  "timestamp": "20260421_133839",
-  "raw_json": "D:\\jayant_gathik\\benchmark_results\\raw_20260421_133839.json",
-  "raw_csv": "D:\\jayant_gathik\\benchmark_results\\raw_20260421_133839.csv",
-  "aggregate": "D:\\jayant_gathik\\benchmark_results\\aggregate_20260421_133839.json",
+  "timestamp": "20260522_181857",
+  "raw_json": "benchmark_results\\raw_20260522_181857.json",
+  "raw_csv": "benchmark_results\\raw_20260522_181857.csv",
+  "aggregate": "benchmark_results\\aggregate_20260522_181857.json",
   "models": [
-    "llama3.2",
-    "mistral",
-    "gemma3:4b",
-    "phi4-mini",
-    "qwen2.5:3b"
+    "qwen2.5"
   ],
-  "n_samples": 6804,
-  "elapsed_s": 47744.0
+  "n_samples": 36,
+  "elapsed_s": 111.3
 }

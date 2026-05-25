@@ -1,6 +1,6 @@
 [
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_1",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "watching monitor",
     "duration_s": 4,
     "gt_verb": "watch",
@@ -8,7 +8,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_2",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "grab a ruler",
     "duration_s": 4,
     "gt_verb": "grab",
@@ -16,7 +16,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_3",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "tear a page from notebook",
     "duration_s": 7,
     "gt_verb": "tear",
@@ -24,7 +24,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_4",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "folding the paper",
     "duration_s": 7,
     "gt_verb": "fold",
@@ -32,7 +32,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_5",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "cutting the paper",
     "duration_s": 35,
     "gt_verb": "cut",
@@ -40,7 +40,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_6",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "open the paper",
     "duration_s": 4,
     "gt_verb": "open",
@@ -48,7 +48,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_7",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "folding the paper",
     "duration_s": 3,
     "gt_verb": "fold",
@@ -56,7 +56,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_8",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "cutting the paper",
     "duration_s": 10,
     "gt_verb": "cut",
@@ -64,7 +64,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_9",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "folding the paper",
     "duration_s": 5,
     "gt_verb": "fold",
@@ -72,7 +72,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_10",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "cutting the paper",
     "duration_s": 6,
     "gt_verb": "cut",
@@ -80,7 +80,7 @@
     "emotion": "Neutral"
   },
   {
-    "video_id": "com.oculus.vrshell-20260430-221558-0_11",
+    "video_id": "com.oculus.vrshell-20260430-221558-0",
     "ground_truth": "looking at monitor",
     "duration_s": 7,
     "gt_verb": "look",
