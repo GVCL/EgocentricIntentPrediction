@@ -10,6 +10,11 @@ Paper PDF: [Emotion_Intent_Detection_Using_Eye_Tracking_with_VR_Headset__ETTAC_2
 
 SeeIntent is an end-to-end Mixed Reality (MR) intent-recognition pipeline for egocentric user perspective. It combines scene-level object detection, facial-expression based emotion classification, fixation/focus estimation, and a temporal Large Language Model (LLM) reasoning module to predict immediate user intent from recent multimodal state history.
 
+<p align="center">
+  <img src="assets/architecture.png" alt="SeeIntent architecture: object detection, fixation target estimation, and emotion classification modules feeding a history buffer and LLM-based intent recognition module" width="100%">
+</p>
+<p align="center"><em>SeeIntent architecture. The XR input stream feeds the object detection module, fixation target estimator, and emotion classifier. Their outputs are stored as states in a history buffer that is serialized into LLM prompts to produce the recognized intent.</em></p>
+
 ## Research Summary
 
 The system is designed for real-time MR interaction analysis where intent depends on what the user sees, how the user feels, and where the user is directing attention. At each timestep, SeeIntent builds a state vector:
@@ -28,6 +33,11 @@ Primary components:
 - **Temporal reasoning:** A rolling history buffer conditions LLM inference on recent multimodal context.
 - **Evaluation:** Benchmarks are provided for EPIC-KITCHENS style egocentric action data and an in-the-wild Meta Quest pilot dataset.
 
+<p align="center">
+  <img src="assets/object_detection_fov.png" alt="YOLO object detections with the estimated field-of-view region overlaid on egocentric kitchen and desk scenes" width="100%">
+</p>
+<p align="center"><em>YOLOv11n detections on egocentric frames, with the estimated field of view (FOV) marked by the dashed circle. The fixation target is the closest detected object inside the FOV.</em></p>
+
 ## Contributions Reflected in This Repository
 
 - A modular real-time MR pipeline for multimodal intent recognition.
@@ -43,6 +53,9 @@ Primary components:
 |-- README.md
 |-- requirements.txt
 |-- Emotion_Intent_Detection_Using_Eye_Tracking_with_VR_Headset__ETTAC_2026_.pdf
+|-- assets/
+|   |-- architecture.png
+|   `-- object_detection_fov.png
 |-- dataset/
 |   |-- com.oculus.vrshell-*.mp4
 |   `-- truth_com.oculus.vrshell-*.json
